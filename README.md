@@ -36,7 +36,22 @@ In this repository, There are two folders: project1, project1_arc
 
 
 ## The path of pre-trained model in NSML
-1. pre-trained model with only sim-clr loss for 300 epochs
+A. training with only sim-clr loss for 300 epochs(by project1)
   - kaist006/fashion_dataset/51/c_model_e299
   
-2. 
+B. training with sim-clr loss and standard cross entropy loss after training A(by project1)
+  - with combined_lr = 0.0001 and no label smoothing: kaist006/fashion_dataset/76/c_model_e329
+  - with combined_lr = 1e-05 and no label smoothing: kaist006/fashion_dataset/77/c_model_e359
+  - with combined_lr = 0.0001 and label smoothing: kaist006/fashion_dataset/78/c_model_e359
+  - with combined_lr = 1e-05 and label smoothing: kaist006/fashion_dataset/79/c_model_e359
+  
+C. training with sim-clr loss and arcface loss after training A(by project1_arc)
+  - kaist006/fashion_dataset/87/c_model_best
+  
+D. training with sim-clr loss, arcface loss, entropy minimization loss after training A(by project1_arc)
+  - with gamma = 100, combined_lr = 0.0001: kaist006/fashion_dataset/131/c_model_best
+  - with gamma = 10, combined_lr = 0.0001: kaist006/fashion_dataset/129/c_model_best
+  - with gamma = 1, combined_lr = 0.0001: kaist006/fashion_dataset/130/c_model_best
+  - with gamma = 100, combined_lr = 0.00005: kaist006/fashion_dataset/152/c_model_best
+  - with gamma = 10, combined_lr = 0.00005: kaist006/fashion_dataset/153/c_model_best
+  - with gamma = 1, combined_lr = 0.00005: kaist006/fashion_dataset/155/c_model_best
