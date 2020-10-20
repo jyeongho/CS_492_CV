@@ -4,7 +4,7 @@ CS_492 : semi-supervised learning for naver fashion dataset
 In this repository, There are two folders: project1, project1_arc
 
 ## project1
-> Project1 was created for two purposes. The first is to train the model for 300 epochs using only sim-clr Loss function. This pre-trained model was used in subsequent experiments. The second is The second is to train the previously pre-trained model with sim-clr loss and standard cross entropy loss. When calculating cross entropy loss, we applied label smoothing.
+> Project1 was created for two purposes. The first is to train the model for 300 epochs using only sim-clr Loss function. This pre-trained model was used in subsequent experiments. The second is to train the previously pre-trained model with sim-clr loss and standard cross entropy loss. When calculating cross entropy loss, we applied label smoothing.
 
 ### ImageDataLoader.py
 > When training time, we need to apply two differnet transforms on same images for labeled and unlabeled data and get its label of labeled data. When valid and test time, we need single image and its label. To do this, __getitem__ function will return images and label depend on data type. 
