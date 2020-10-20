@@ -20,4 +20,14 @@ In this repository, There are two folders: project1, project1_arc
 
 
 ## project1_arc
-dd
+> Project1_arc was created for introducing arcface loss and entropy minimization loss function.
+
+### ImageDataLoader.py
+> Same as the implementation in project1.
+
+### loss.py
+> ContrastiveArcLoss class was added. When we train the model after sim-clr training, ContrastiveArcLoss class will calculate NTXentLoss and arcface loss (applying cross entropy loss to pre-processed pred value) and entropy minimization loss.
+
+### model.py
+> ArcMargin module was added and weights_init_classifier was changed since last classification layer has no bias.
+
