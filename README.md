@@ -29,5 +29,14 @@ In this repository, There are two folders: project1, project1_arc
 > ContrastiveArcLoss class was added. When we train the model after sim-clr training, ContrastiveArcLoss class will calculate NTXentLoss and arcface loss (applying cross entropy loss to pre-processed pred value) and entropy minimization loss.
 
 ### model.py
-> ArcMargin module was added and weights_init_classifier was changed since last classification layer has no bias.
+> ArcMargin module was added and weights_init_classifier was changed since last classification layer has no bias. To calculate arcface loss at training time, we need to do additional process to model prediction which is the output of the classifier layer. However, at test time, we need to get original model prediction value to calculate accuracy. Therefore, we added ArcMargin module to update parameter of classifier layer. After updating ArcMargin, copy the value of params into classifier of original model.
 
+### main.py
+> We conducted several experiments while changing the value of some parameters.
+
+
+## The path of pre-trained model in NSML
+1. pre-trained model with only sim-clr loss for 300 epochs
+  - kaist006/fashion_dataset/51/c_model_e299
+  
+2. 
