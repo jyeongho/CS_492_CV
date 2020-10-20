@@ -16,7 +16,7 @@ In this repository, There are two folders: project1, project1_arc
 > contrastive_model module is consist of feature extractor and linear layer for feature embedding and linear layer for classifition. We use efficientnet-b0 as feature extractor.
 
 ### main.py
-> When training with only sim-clr loss, we removed comment sign('#') in line 155~157 and add comment sign in line 160~164. When training with combined loss, we executed current code. After training with only sim-clr loss, enter its checkpoint name and its session on ckpt and session parameter.
+> When training with only sim-clr loss, we removed comment sign('#') in line 155 to 157 and add comment sign in line 160 to 164. When training with combined loss, we executed current code. After training with only sim-clr loss, enter its checkpoint name and its session on ckpt and session parameter.
 
 
 ## project1_arc
