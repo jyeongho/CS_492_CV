@@ -45,7 +45,7 @@ B. training with sim-clr loss and standard cross entropy loss after training A(b
   - with combined_lr = 0.0001 and label smoothing: kaist006/fashion_dataset/78/c_model_e359
   - with combined_lr = 1e-05 and label smoothing: kaist006/fashion_dataset/79/c_model_e359
   
-  When conducting these experiments, we found that there was a mistake on saving best model in code. So, we couldn't save best model properly. Therefore, the results of the model entered above may be slightly different from the results in ppt slide. 
+  + When conducting these experiments, we found that there was a mistake on saving best model in code. So, we couldn't save best model properly. Therefore, the results of the model entered above may be slightly different from the results in ppt slide. 
   
 C. training with sim-clr loss and arcface loss after training A(by project1_arc)
   - kaist006/fashion_dataset/87/c_model_best
