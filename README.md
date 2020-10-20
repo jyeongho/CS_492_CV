@@ -12,5 +12,12 @@ In this repository, There are two folders: project1, project1_arc
 ### loss.py
 > ContrastiveLoss class calculates combined loss value during training time. When we train the model with only sim-clr loss, ContrastiveLoss class will calculate only NTXentLoss which is the loss funcion for Sim-CLR training. When we train the model after sim-clr training, ContrastiveLoss class will calculate NTXentLoss and cross entropy loss with label smoothing, sum two value and return total loss value. At this point, we use NTXentLoss function from "https://github.com/sthalles/SimCLR/blob/master/loss/nt_xent.py"
 
+### models.py
+> contrastive_model module is consist of feature extractor and linear layer for feature embedding and linear layer for classifition. We use efficientnet-b0 as feature extractor.
+
+### main.py
+> When training with only sim-clr loss, we removed comment sign('#') in line 155~157 and add comment sign in line 160~164. When training with combined loss, we executed current code. After training with only sim-clr loss, enter its checkpoint name and its session on ckpt and session parameter.
+
+
 ## project1_arc
 dd
